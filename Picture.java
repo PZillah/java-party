@@ -1,6 +1,5 @@
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.Graphics;
 
 import javax.swing.JFrame;
@@ -9,12 +8,14 @@ import javax.swing.JPanel;
 public class Picture extends JPanel {
     private Circle c = new Circle(100, 250, 250, Color.BLUE);
     private Circle sun = new Circle();
+    private Square square = new Square();
 
 
     public void paintComponent(Graphics page) {
         sun.setColor(Color.ORANGE);
         sun.paint(page);
         c.paint(page);
+        square.paint(page);
     }
 
     public static void main(String[] args) {
