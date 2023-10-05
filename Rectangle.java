@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.awt.Graphics;
 
 public class Rectangle {
     // FIELDS
@@ -30,7 +31,11 @@ public class Rectangle {
         this.width = width;
     }
 
-
+    public void paint(Graphics page) {
+        page.setColor(color);
+        page.fillRect(x, y, width, height);
+        }
+        
     public static void main(String[] args) {
         Rectangle r = new Rectangle();
         System.out.println("Width is: " + r.getWidth());
