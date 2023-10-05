@@ -9,10 +9,10 @@ public class Square {
     // CONSTRUCTORS
     // default constructor with no params
     public Square() {
-        x = 150; // location on page from the left side
-        y = 100; // location on page from the top side
+        x = 350; // location on page from the left side on the x axis
+        y = 300; // location on page from the top side on the y axis
         width = 100;
-        color = Color.GREEN;
+        color = Color.PINK;
     }
     // constructor with 4 params (1 for each field)
     public Square(int x, int y, int width, Color color) {

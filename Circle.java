@@ -23,7 +23,7 @@ public class Circle {
         this.fillColor = color;
         this.outlineColor = color;
     }
-    public Circle(int radius, int x, int y, Color fillColor, Color outlinColor) {
+    public Circle(int radius, int x, int y, Color fillColor, Color outlineColor) {
         this(radius, x, y, fillColor);
         this.outlineColor = outlineColor;
     }

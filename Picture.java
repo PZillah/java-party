@@ -5,22 +5,22 @@ import java.awt.Graphics;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import org.w3c.dom.css.Rect;
-
 public class Picture extends JPanel {
-    private Circle c = new Circle(100, 250, 250, Color.BLUE);
+    private Circle c = new Circle(100, 250, 250, Color.BLUE, Color.WHITE);
     private Circle sun = new Circle();
     private Square square = new Square();
-    private Rectangle grass = new Rectangle();
-    private Ellipse cloud = new Ellipse(50, 200, 150, 200, Color.WHITE);
+    private Rectangle ground = new Rectangle(0, 400, 500, 100, Color.GREEN);
+    private Rectangle sky = new Rectangle(0, 0, 500, 500, Color.CYAN);
+    private Ellipse cloud = new Ellipse(50, 200, 300, 100, Color.WHITE);
 
 
     public void paintComponent(Graphics page) {
+        sky.paint(page);
         sun.setColor(Color.ORANGE);
         sun.paint(page);
         c.paint(page);
-        grass.paint(page);
         square.paint(page);
+        ground.paint(page);
         cloud.paint(page);
     }
 

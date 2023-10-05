@@ -36,11 +36,11 @@ public class Rectangle {
         page.fillRect(x, y, width, height);
         }
         
-    public static void main(String[] args) {
-        Rectangle r = new Rectangle();
-        System.out.println("Width is: " + r.getWidth());
-        r.setWidth(1000);
-        System.out.println("New width is: " + r.getWidth());
-    }
+    // public static void main(String[] args) {
+    //     Rectangle r = new Rectangle();
+    //     System.out.println("Width is: " + r.getWidth());
+    //     r.setWidth(1000);
+    //     System.out.println("New width is: " + r.getWidth());
+    // }
 
 }
