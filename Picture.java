@@ -6,12 +6,12 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Picture extends JPanel {
-    private Circle c = new Circle(100, 250, 250, Color.BLUE, Color.WHITE);
+    private Circle c = new Circle(50, 250, 250, Color.BLUE, Color.WHITE);
     private Circle sun = new Circle();
     private Square square = new Square();
     private Rectangle ground = new Rectangle(0, 400, 500, 100, Color.GREEN);
     private Rectangle sky = new Rectangle(0, 0, 500, 500, Color.CYAN);
-    private Ellipse cloud = new Ellipse(50, 200, 300, 100, Color.WHITE);
+    private Ellipse cloud = new Ellipse(150, 40, 300, 80, Color.WHITE);
 
 
     public void paintComponent(Graphics page) {

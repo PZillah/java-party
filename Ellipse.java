@@ -3,7 +3,7 @@ import java.awt.Graphics;
 
 public class Ellipse extends Circle {
     // FIELD
-    private int radius2 = 100;
+    private int radius2 = 50;
 
     public Ellipse(int r, int r2) {
         super(r);         // calls Circle
@@ -29,8 +29,8 @@ public class Ellipse extends Circle {
     }
     public void paint(Graphics page) {
         page.setColor(super.fillColor);
-        page.fillOval(x - radius, y - radius, 2 * radius, 2 * radius);
+        page.fillOval(x - radius, y - radius2, 2 * radius, 2 * radius2);
         page.setColor(outlineColor);
-        page.drawOval(x - radius, y - radius, 2 * radius, 2 * radius);
+        page.drawOval(x - radius, y - radius2, 2 * radius, 2 * radius2);
     }
 }
