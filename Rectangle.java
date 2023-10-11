@@ -35,6 +35,9 @@ public class Rectangle {
         page.setColor(color);
         page.fillRect(x, y, width, height);
         }
+
+    public void setColor(Color color2) {
+    }
         
     // public static void main(String[] args) {
     //     Rectangle r = new Rectangle();
